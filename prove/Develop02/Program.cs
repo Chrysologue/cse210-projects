@@ -13,7 +13,7 @@ class Program
         while (choice != 5)
         {
             Console.WriteLine("Please select one of the following choices:");
-            for (int x = 0; x < 5; x++)
+            for (int x = 0; x < 6; x++)
             {
                 Console.WriteLine($"{x + 1}. {options[x]}");
             }

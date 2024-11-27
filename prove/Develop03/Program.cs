@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
 
-        // Creating a list to store Scripture objects.
+        // Implementing a list of scripture objects, each containing a unique Reference and text.
         List<Scripture> scriptures = new List<Scripture>
         {
              new Scripture(new Reference("Proverbs", 3, 5, 6), 
@@ -20,6 +20,7 @@ class Program
                 "The LORD hath also a controversy with Judah, and will punish Jacob according to his ways; according to his doings will he recompense him. He took his brother by the heel in the womb, and by his strength he had power with God:")
         };
 
+        //Selecting randomly a scripture from  list.
         Random rand = new Random();
         Scripture scripture = scriptures[rand.Next(scriptures.Count)];
 

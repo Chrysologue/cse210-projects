@@ -20,7 +20,7 @@ public class Video
     {
         foreach(var comment in _comments)
         {
-            Console.WriteLine(comment._text);
+            Console.WriteLine($"Comment by {comment._name}: {comment._text}");
         }
     }
 }

@@ -46,7 +46,7 @@ public class ListingActivity : Activity
         GetRandomPrompt();
         Console.WriteLine();
         GetListFromUser();
-        Console.WriteLine($"You listed {_responses.Count} items");
+        Console.WriteLine($"You listed {_responses.Count} items.");
         DisplayEndingMessage();
         Console.Clear();
         

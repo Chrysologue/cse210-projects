@@ -17,12 +17,7 @@ public class ListingActivity : Activity
         Console.WriteLine("List as many responses you can to the following prompt");
         Console.WriteLine($"---{randomChoice}---");
         Console.Write("You may begin in: ");
-        for(int x = _count; x > 0; x--)
-        {
-            Console.Write(x);
-            Thread.Sleep(1000);
-            Console.Write("\b \b");
-        }
+        ShowCountDown(_count);
     }
     public List<String> GetListFromUser()
     {

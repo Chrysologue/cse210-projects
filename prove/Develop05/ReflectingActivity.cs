@@ -1,7 +1,6 @@
 using System;
 public class ReflectingActivity : Activity
 {
-    private int _count;
     private List<string> _prompts = new List<string> 
     {
         "Think of a time when you stood up for someone else.",
@@ -25,7 +24,6 @@ public class ReflectingActivity : Activity
     Random rand = new Random();
     public ReflectingActivity(string name, string description) : base(name, description)
     {
-        _count = 5;
     }
     public string GetRandomPrompt()
     {
@@ -64,12 +62,7 @@ public class ReflectingActivity : Activity
 
         Console.WriteLine("Now ponder on each of the following questions as they relate to this experience.");
         Console.Write("You may begin in: ");
-        for (int x = _count; x > 0; x--)
-        {
-            Console.Write(x);
-            Thread.Sleep(1000);
-            Console.Write("\b \b");
-        }
+        ShowCountDown(5);
 
         Console.Clear();
         DisplayQuestions(endTime);

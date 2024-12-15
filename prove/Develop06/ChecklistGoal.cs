@@ -18,7 +18,7 @@ public class ChecklistGoal : Goal
         {
             _amountCompleted++;
 
-            if (_amountCompleted == _bonus)
+            if (_amountCompleted == _target)
             {
                 Points += _bonus;
                 Console.WriteLine($"You have earned a bonus! Total points now: {Points} points.");
